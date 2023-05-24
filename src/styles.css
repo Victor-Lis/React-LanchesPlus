@@ -1,0 +1,83 @@
+/* styles.css */
+
+/* Estilo do container principal */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilo do header com a navbar */
+  header {
+    margin-bottom: 20px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+  }
+  
+  .navbar {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Estilo do logo */
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Estilo do main content */
+  main {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .pedido {
+    flex: 1;
+  }
+  
+  .lanches {
+    flex: 2;
+  }
+  
+  .lanches h2 {
+    margin-bottom: 10px;
+  }
+  
+  .imagem-lanche img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .ingredientes {
+    margin-top: 20px;
+  }
+  
+  .ingredientes h3 {
+    margin-bottom: 10px;
+  }
+  
+  .ingredientes div {
+    margin-bottom: 5px;
+  }
+  
+  /* Estilo do footer */
+  footer {
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
