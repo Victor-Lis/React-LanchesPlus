@@ -1,0 +1,119 @@
+.product-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 110%;
+  }
+  
+  .contentBox{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+
+  .product-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .product-info {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .product-name {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .product-subtitle{
+
+    text-align: left;
+    width: 80%;
+    margin: 10px 0;
+
+  }
+
+  .product-description {
+    font-size: 16px;
+    width: 60%;
+    margin-bottom: 20px;
+  }
+  
+  .product-price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .add-to-cart {
+    background-color: #6f42c1;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #522d90;
+  }
+
+  .loading{
+
+    animation: load .5s infinite linear;
+
+  }
+  
+  @media (min-width: 650px) {
+
+    .product-details {
+
+        background: url("../../../Images/BackgroundSimples.png");
+        background-repeat: repeat-x;
+        background-position: center;
+        background-size: contain;
+
+    }
+    
+    .contentBox{
+        
+        max-width: 550px;
+        background-color: #fff;
+
+    }
+
+    .product-subtitle{
+
+      width: 60%;
+      margin: 15px 0;
+
+    }
+
+  }
+
+  @keyframes load {
+    from{
+
+      rotate: 0deg;
+
+    }
+    to{
+
+      rotate: 360deg;
+
+    }  
+  }

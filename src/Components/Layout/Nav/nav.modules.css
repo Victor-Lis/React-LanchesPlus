@@ -1,0 +1,104 @@
+  /* Estilo do header com a navbar */
+  header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 94%;
+    padding: 0 3%;
+    height: 75px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    animation: onLoad-animation .1s ease-in;
+    z-index: 1;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .navbar {
+    list-style: none;
+    display: flex;  
+    align-items: center;
+    justify-content: space-around;
+    gap: 7.5px;
+  }
+
+  .icon{
+
+    transition: .25s;
+
+  }
+
+  .icon:hover{
+
+    transition: .25s;
+    opacity: 0.5;
+    cursor: pointer;
+    filter: drop-shadow(1px 1px 1px #6f42c1)
+
+  }
+  
+  .navbar li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 20px;
+    transition: .25s;
+  }
+
+  .navbar li a:hover{
+
+    transition: .25s;
+    color: #666;
+    cursor: pointer;
+
+  }
+  
+  /* Estilo do logo */
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  @keyframes onLoad-animation {
+    0%{
+  
+      transform: translateY(-20px);
+      opacity: 0;
+  
+    }
+  
+    100%{
+  
+      transform: translateY(0px);
+      opacity: 1;
+
+    }
+  }
+
+  @media (min-width: 500px) {
+
+    .navbar{
+  
+      gap: 30px;
+  
+    }
+   
+    .navbar li a {
+
+      font-size: 20px;
+
+    }
+    
+  }

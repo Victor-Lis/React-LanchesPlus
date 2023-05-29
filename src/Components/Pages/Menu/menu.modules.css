@@ -1,0 +1,230 @@
+/* Estilo do main content */
+main {
+    width: 95%;
+    padding: 0 2.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .banner {
+    background-image: url("../../Layout/Main/Images/background.png");
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #6f42c1;
+    text-align: center;
+  }
+  
+  .banner-content {
+    max-width: 600px;
+  }
+  
+  .banner h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .banner p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    background-color: #6f42c1;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #522d90;
+  }
+  
+  .menu-destaques {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 95%;
+  }
+  
+  .menu-destaque {
+      max-width: 30%;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 10px;
+      padding-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+  }
+  
+  .menu-destaque > .imgBox {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .menu-destaque > .imgBox > img {
+    width: 70%;
+    max-width: 300px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    filter: drop-shadow(1px 1px 1px #6f42c1);
+    z-index: 0;
+  }
+
+  .destaque > h2 {
+    font-size: 1.120rem;
+    font-weight: bold;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .preco {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .addPedido {
+    background-color: #6f42c1;
+    color: #fff;
+    border: none;
+    padding: 7.5px 12.5px;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .addPedido:hover {
+    background-color: #522d90;
+    cursor: pointer;
+  }
+  
+  .menu {
+    margin: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .menu h1 {
+    margin-bottom: 10px;
+    margin-top: 35px;
+  }
+  
+  .menu-cardsBox {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menu-card {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 0;
+    width: 100%;
+    margin: 2.5% 0;
+    min-width: 250px;
+  }
+  
+  .menu-card img {
+    max-width: 150px;
+    width: 45%;
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.1));
+  }
+  
+  .menu-card-content {
+    width: 45%;
+    text-align: center;
+  }
+  
+  .menu-card-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  @media (min-width: 650px) {
+    .banner {
+      height: 400px;
+    }
+  
+    .menu-destaques {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .menu-destaque {
+      width: 100%;
+      max-width: 550px;
+    }
+  
+    .menu-cardsBox {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  
+    .menu-card {
+      max-width: 500px;
+      width: 40%;
+      margin: .5% 0;
+      height: 150px;
+      padding: 25px;
+
+      > .menu-card-content{
+
+        width: 60%;
+
+        > .menu-description{
+
+          font-size: 14px;
+
+        }
+
+      }
+
+    }
+  
+    .menu-card .addPedido {
+      padding: 10px 5px;
+    }
+
+    .menu{
+
+        margin-top: 0;
+
+    }
+
+  }
+  

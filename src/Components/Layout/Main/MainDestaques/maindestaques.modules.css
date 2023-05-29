@@ -1,0 +1,20 @@
+.destaques {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (min-width: 550px) {
+
+    .destaques{
+
+        flex-direction: row;
+    
+    }
+
+  }

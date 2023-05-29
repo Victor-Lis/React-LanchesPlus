@@ -1,0 +1,134 @@
+.cart {
+    width: 95%;
+    padding: 0 2.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cart-title {
+    font-size: 25px;
+    /* text-shadow: 01px 1px 1px #9156ff; */
+    margin: 20px;
+  }
+  
+  .cart-items {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .cart-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .cart-item-image{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 200px;
+    width: 50%;
+
+  }
+  
+  .cart-item-image img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 4px;
+  }
+  
+  .cart-item-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    padding: 0 2.5%;
+    text-align: center;
+  }
+  
+  .cart-item-name {
+    font-size: 20px;
+    margin: 20px 0;
+  }
+  
+  .cart-item-description {
+    margin-bottom: 40px;
+  }
+  
+  .cart-item-price {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .remove-from-cart {
+    width: 10%;
+    min-width: 90px;
+    margin: 0 2.5%;
+    background-color: #6f42c1;
+    color: #fff;
+    border: none;
+    padding: 7.5px 12.5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .remove-from-cart:hover {
+    background-color: #522d90;
+  }
+  
+  .cart-total {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .cart-total p {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px;
+  }
+  
+  .checkout {
+    background-color: #6f42c1;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .checkout:hover {
+    background-color: #522d90;
+  }
+
+  @media (min-width: 550px) {
+    .cart-item{
+
+        flex-direction: row;
+
+    }
+    .cart-item-image{
+
+        width: 30%;
+
+    }
+    .cart-item-info {
+
+        width: 50%;
+
+    }
+  }
