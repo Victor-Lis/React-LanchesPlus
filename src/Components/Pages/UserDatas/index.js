@@ -6,11 +6,14 @@ import { Link } from 'react-router-dom';
 export default function UserDatas({userID, setUserID}) {
 
     const [data, setData] = useState(null)
+    const [mensagens, setMensagens] = useState(null)
 
     async function getUser(){
 
         let datas = await getUserDatas(userID)
         setData(datas)
+        setMensagens(Object.values(datas.mensagens))
+        mensagens.map(msg => console.log(msg.mensagem))
 
     }
 
@@ -72,7 +75,35 @@ export default function UserDatas({userID, setUserID}) {
             Deslogar
 
          </Link>
-        </div>
+
+{/*     <div className='datas-info'>
+
+          <h3 className='datas-subtitle' style={{width: "125%"}}> Mensagens </h3>
+
+          {mensagens && mensagens.length > 0? (
+
+            mensagens.map((mensagem) => {
+
+              return (<p className="datas-description">
+            
+                {mensagem.mensagem}
+
+              </p>)
+
+            })
+
+          ):(
+
+            <p className="datas-description">
+            
+              Não há mensagens ainda!
+
+            </p>
+            
+          )}
+
+        </div> */}
        </div>
+      </div>
     );
 }

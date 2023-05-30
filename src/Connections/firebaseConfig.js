@@ -114,6 +114,17 @@ async function addRequest(useruid, data){
 
 }
 
+async function addMensagem(useruid, data){
+
+  const mensagemUserRef = ref(database, `usuarios/${useruid}/mensagens`);
+  const mensagemRef = ref(database, `mensagens`);
+
+  await push(mensagemUserRef, data)
+  await push(mensagemRef, data)
+
+}
+
+
 async function getProduct(useruid){
 
   const carrinhoRef = ref(database, `usuarios/${useruid}/carrinho`);
@@ -158,4 +169,4 @@ async function deleteAll(useruid){
 
 }
 
-export { firebaseConfig, cadastrar, logar, getUserDatas, addRequest, deleteAtributte, getProductsDatas, deleteAll, getProduct };
+export { firebaseConfig, cadastrar, logar, getUserDatas, addRequest, deleteAtributte, getProductsDatas, deleteAll, getProduct, addMensagem };

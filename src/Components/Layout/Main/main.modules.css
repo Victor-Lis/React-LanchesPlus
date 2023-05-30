@@ -207,8 +207,9 @@
     margin-bottom: 20px;
   }
   
-  form input,
-  form textarea {
+  div input,
+  div .message-p,
+  div textarea {
     width: 95%;
     padding: 03% 2.5%;
     margin-bottom: 10px;
@@ -217,13 +218,14 @@
     resize: none;
   }
   
-  form input:focus,
-  form textarea:focus {
+  div input:focus,
+  div .message-p,
+  div textarea:focus {
   
     outline: .5px solid gray;
 
   }
-  form textarea {
+  div textarea {
     height: 120px;
   }
   
@@ -305,8 +307,9 @@
 
   }
 
-  form input,
-  form textarea {
+  div input,
+  div .message-p,
+  div textarea {
 
     padding: 15px 12px;
 

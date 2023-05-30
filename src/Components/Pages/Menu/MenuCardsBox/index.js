@@ -14,7 +14,7 @@ export default function MenuCardsBox({datas, tipo}) {
 
         if(data.tipo.toLowerCase() == tipo[0].toLowerCase()){
 
-          return <MenuCard data={data} index={index} />
+          return <MenuCard key={index} data={data} index={index} />
 
         }
 

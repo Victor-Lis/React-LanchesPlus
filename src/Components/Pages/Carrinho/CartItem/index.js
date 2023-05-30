@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { deleteAtributte } from '../../../../Connections/firebaseConfig'
 
-export default function CartItem({data, userID, index, setProdutos, setTotal, total}) {
+export default function CartItem({data, userID, index, produtos, setProdutos, total}) {
 
     async function deleteItem(){
 
-        setTotal(total - data.preco)
-        let newProdutos = await deleteAtributte(index, userID)
-        setProdutos(newProdutos)
+        total-= Number(data.preco)
+        await deleteAtributte(index, userID)
+        let newArray = produtos.splice(index-1, 1)
+        setProdutos(newArray)
 
     }
 

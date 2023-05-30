@@ -5,22 +5,8 @@ import { getProduct } from '../../../Connections/firebaseConfig'
 
 function Carrinho({userID}){
 
-  const [total, setTotal] = useState(0)
+  let total = 0;
   const [produtos, setProdutos] = useState(null)
-
-  function handleValue(valor, sinal){
-
-    if(sinal == "+"){
-
-      setTotal(total+valor)
-
-    }else if(sinal == "-"){
-
-      setTotal(total-valor)
-
-    }
-
-  }
 
   async function finish(){
 
@@ -39,17 +25,8 @@ function Carrinho({userID}){
   async function getDatas(){
 
     setProdutos([])
-    setTotal(0)
     let datas = await getProduct(userID)
     setProdutos(datas)
-
-    if(datas != null && datas.length > 0){
-      datas.map((data) => {
-
-        handleValue(Number(data.preco), "+")
-
-      })
-    }
 
   }
 
@@ -86,7 +63,8 @@ function Carrinho({userID}){
 
         {produtos && produtos.length > 0? (produtos.map((produto, index) => {
 
-          return <CartItem key={index} data={produto} index={index} userID={userID} getDatas={getDatas} produtos={produtos} setProdutos={setProdutos} setTotal={setTotal} total={total}/>
+          total+=Number(produto.preco)
+          return <CartItem key={index} data={produto} index={index} userID={userID} getDatas={getDatas} produtos={produtos} setProdutos={setProdutos} total={total}/>
 
         })):(
 

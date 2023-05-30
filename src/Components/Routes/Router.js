@@ -50,7 +50,7 @@ function Router() {
       <Nav userID={userID}/>
 
       <Routes>
-        <Route path="/" element={<Home datas={produtos != null?produtos : ""}/>}/>
+        <Route path="/" element={<Home userID={userID} datas={produtos != null?produtos : ""}/>}/>
         <Route path="/menu" element={<Menu datas={produtos != null?produtos : ""}/>}/>
         <Route path="/produto/:id" element={<Product datas={produtos != null?produtos : ""} userID={userID}/>}/>
         <Route path="/carrinho" element={<Carrinho userID={userID}/>}/>
