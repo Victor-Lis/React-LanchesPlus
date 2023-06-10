@@ -3,22 +3,26 @@ import './carrinho.modules.css';
 import CartItem from './CartItem';
 import { getProduct } from '../../../Connections/firebaseConfig'
 
+import ModalQRCode from '../../Layout/ModalQRCode';
+
 function Carrinho({userID}){
 
   let total = 0;
   const [produtos, setProdutos] = useState(null)
+  const [img, setImg] = useState(null)
+  const [showQRCode, setShowQRCode] = useState(false)
 
   async function finish(){
 
-    // const objetoString = JSON.stringify(produtos)
+    const objetoString = JSON.stringify(produtos)
 
-    // const objetoCodificado = btoa(objetoString)
+    const objetoCodificado = btoa(objetoString)
 
-    // const url = await `https://api.qrserver.com/v1/create-qr-code/?data=${objetoCodificado}`;
+    const url = `https://chart.googleapis.com/chart?cht=qr&chs=500x500&chl=${objetoCodificado}`;
 
-    // console.log(url)
+    setImg(url)
 
-    alert("Este botão não faz nada ainda...")
+    setShowQRCode(true)
 
   }
 
@@ -79,8 +83,15 @@ function Carrinho({userID}){
       </ul>
       <div className="cart-total">
         <p>Total: R${total}</p>
-        <button className="checkout" onClick={() => finish()}>Finalizar Pedido</button>
+        {produtos && produtos.length > 0 && <button className="checkout" onClick={() => finish()} style={{marginBottom: "20px"}}>Finalizar Pedido</button>}
       </div>
+
+      {showQRCode && 
+      
+        <ModalQRCode onClose={setShowQRCode} img={img}/>
+
+      }
+
     </div>
   );
 };

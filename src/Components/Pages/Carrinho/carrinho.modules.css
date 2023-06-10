@@ -23,7 +23,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 10px;
@@ -99,6 +99,10 @@
     font-size: 25px;
     font-weight: bold;
     margin: 20px;
+  }
+
+  .cart-total img {
+    width: 80%;
   }
   
   .checkout {

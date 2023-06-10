@@ -159,8 +159,9 @@ main {
   }
   
   .menu-card img {
-    max-width: 150px;
+    max-width: 125px;
     width: 45%;
+    object-fit: contain;
     filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.1));
   }
   

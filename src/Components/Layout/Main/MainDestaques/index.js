@@ -9,7 +9,7 @@ export default function MainDestaques({datas}) {
     <section className="destaques">
     {datas.map((data, index) => {
 
-        if(index < 2){
+        if(index < 2 && data.tipo == "L"){
 
             return <MainDestaque key={index} data={data} index={index}/>
 
