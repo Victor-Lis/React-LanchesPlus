@@ -4,14 +4,17 @@ import MainDestaque from './MainDestaque'
 
 export default function MainDestaques({datas}) {
 
+  let lanches = 0
+
   return (
     
     <section className="destaques">
     {datas.map((data, index) => {
 
-        if(index < 2 && data.tipo == "L"){
+        if(data.tipo == "L" && lanches<3){
 
-            return <MainDestaque key={index} data={data} index={index}/>
+          lanches++
+          return <MainDestaque key={index} data={data} index={index}/>
 
         }
 
