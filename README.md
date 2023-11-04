@@ -11,7 +11,7 @@ Acredito que meus principais desafios nesse projeto foram:
 - Utilizar pela primeira vez a lib "react-router-dom".
 - Uma das primeiras vezes usando ternary operator.
 - Uma das primeiras vezes fazendo um sistema de login na web (trabalhando com LocalStorage).
-- Criação de um QR Code usando uma API e passando valores em JSON.
+- Criação de um QR Code usando uma API e passando valores em JSON (QR Code pode ser lido no App de Admin).
 
 
 
@@ -83,7 +83,7 @@ async function finish(){
 
 ![Banner](https://github.com/Victor-Lis/React-LanchesPlus/blob/master/src/ScreenShots/Home%20Banner.png)
 
-![Home Pedidos](https://github.com/Victor-Lis/React-LanchesPlus/blob/master/src/ScreenShots/Home.png)
+![Home Pedidos](https://github.com/Victor-Lis/React-LanchesPlus/blob/master/src/ScreenShots/Home%20Pedidos.png)
 
 ![Pedidos Icons](https://github.com/Victor-Lis/React-LanchesPlus/blob/master/src/ScreenShots/Pedidos%20Icons.png)
 
@@ -92,6 +92,11 @@ async function finish(){
 ![Carrinho](https://github.com/Victor-Lis/React-LanchesPlus/blob/master/src/ScreenShots/Carrinho.png)
 
 ![User](https://github.com/Victor-Lis/React-LanchesPlus/blob/master/src/ScreenShots/User.png)
+
+## Outros
+
+ - [App para Administradores](https://github.com/Victor-Lis/Adm-App-for-LanchesPlus)
+
 
 ## Autores
 
