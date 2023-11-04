@@ -79,7 +79,7 @@ async function finish(){
 }
 
 ```
-# React Laches+
+# Screenshots
 
 ![Banner](https://github.com/Victor-Lis/React-LanchesPlus/blob/master/src/ScreenShots/Home%20Banner.png)
 
