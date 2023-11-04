@@ -83,7 +83,17 @@ async function finish(){
 
 ![Banner](https://github.com/Victor-Lis/React-LanchesPlus/blob/master/src/ScreenShots/Home%20Banner.png)
 
+![Home Pedidos](https://github.com/Victor-Lis/React-LanchesPlus/blob/master/src/ScreenShots/Home.png)
+
+![Pedidos Icons](https://github.com/Victor-Lis/React-LanchesPlus/blob/master/src/ScreenShots/Pedidos%20Icons.png)
+
+![Pedidos Secoes](https://github.com/Victor-Lis/React-LanchesPlus/blob/master/src/ScreenShots/Pedidos%20Secoes.png)
+
+![Carrinho](https://github.com/Victor-Lis/React-LanchesPlus/blob/master/src/ScreenShots/Carrinho.png)
+
+![User](https://github.com/Victor-Lis/React-LanchesPlus/blob/master/src/ScreenShots/User.png)
 
 ## Autores
 
 - [@Victor-Lis](https://github.com/Victor-Lis)
+
