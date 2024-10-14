@@ -8,7 +8,7 @@ export default function ModalQRCode({onClose, img}) {
             <h2>Pedido Gerado</h2>
             <p>Mostre o código abaixo a um vendedor.</p>
             <img src={img}/>
-                <div className='modal-row'>
+                <div className='modal-row' style={{marginTop: 20}}>
 
                     <a className="cta-button" onClick={() => onClose(false)}>Fechar</a>
 

@@ -16,9 +16,7 @@ function Carrinho({userID}){
 
     const objetoString = JSON.stringify(produtos)
 
-    const objetoCodificado = btoa(objetoString)
-
-    const url = `https://chart.googleapis.com/chart?cht=qr&chs=500x500&chl=${objetoCodificado}`;
+    const url = `https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${objetoString}`;
 
     setImg(url)
 
