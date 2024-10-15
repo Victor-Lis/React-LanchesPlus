@@ -5,6 +5,7 @@ import App from './App';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <title>Lanches+</title>
     <App />
   </React.StrictMode>
 );

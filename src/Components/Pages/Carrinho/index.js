@@ -16,7 +16,11 @@ function Carrinho({userID}){
 
     const objetoString = JSON.stringify(produtos)
 
-    const url = `https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${objetoString}`;
+    const objetoCodificado = window.btoa(objetoString)
+
+    // console.log(objetoCodificado)
+
+    const url = `https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${objetoCodificado}`;
 
     setImg(url)
 
